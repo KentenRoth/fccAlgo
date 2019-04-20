@@ -1,0 +1,23 @@
+{
+	"name": "fccalgo",
+	"version": "1.0.0",
+	"description": "I am going to copy the FCC challenges to here so I an practice more with setting up tests.",
+	"main": "convertCtoF.js",
+	"dependencies": {
+		"jest": "^24.7.1"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/KentenRoth/fccAlgo.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/KentenRoth/fccAlgo/issues"
+	},
+	"homepage": "https://github.com/KentenRoth/fccAlgo#readme"
+}
