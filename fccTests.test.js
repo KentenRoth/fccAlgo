@@ -1,5 +1,6 @@
 const convertToF = require('./convertCtoF');
 const reverseString = require('./reverseString');
+const factorialize = require('./factorializeNumber');
 
 describe('Convert Fahrenheit to Celsius', () => {
 	it('should return -22 if it is -30 celsius', () => {
@@ -36,5 +37,23 @@ describe('Reverse a String', () => {
 		expect(reverseString('Greetings from Earth')).toBe(
 			'htraE morf sgniteerG'
 		);
+	});
+});
+
+describe('Factorialize a Number', () => {
+	it('should equal 120', () => {
+		expect(factorialize(5)).toBe(120);
+	});
+
+	it('should equal 3628800', () => {
+		expect(factorialize(10)).toBe(3628800);
+	});
+
+	it('should equal 2432902008176640000', () => {
+		expect(factorialize(20)).toBe(2432902008176640000);
+	});
+
+	it('should equal 1', () => {
+		expect(factorialize(0)).toBe(1);
 	});
 });
