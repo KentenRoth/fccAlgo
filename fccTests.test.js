@@ -1,6 +1,7 @@
 const convertToF = require('./convertCtoF');
 const reverseString = require('./reverseString');
 const factorialize = require('./factorializeNumber');
+const findLongestWordLength = require('./longestWordInString');
 
 describe('Convert Fahrenheit to Celsius', () => {
 	it('should return -22 if it is -30 celsius', () => {
@@ -55,5 +56,15 @@ describe('Factorialize a Number', () => {
 
 	it('should equal 1', () => {
 		expect(factorialize(0)).toBe(1);
+	});
+});
+
+describe('Should find the lonest word length in an array', () => {
+	it('should return 6 with an string of "The quick brown fox jumped over the lazy dog"', () => {
+		expect(
+			findLongestWordLength(
+				'The quick brown fox jumped over the lazy dog'
+			)
+		).toBe(6);
 	});
 });
