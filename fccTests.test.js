@@ -60,7 +60,7 @@ describe('Factorialize a Number', () => {
 });
 
 describe('Should find the lonest word length in an array', () => {
-	it('should return 6 with an string of "The quick brown fox jumped over the lazy dog"', () => {
+	it('should return 6 with a string of "The quick brown fox jumped over the lazy dog"', () => {
 		expect(
 			findLongestWordLength(
 				'The quick brown fox jumped over the lazy dog'
