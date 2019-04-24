@@ -67,4 +67,8 @@ describe('Should find the lonest word length in an array', () => {
 			)
 		).toBe(6);
 	});
+
+	it('should return 5 with a string of "May the Force be with you"', () => {
+		expect(findLongestWordLength('May the force be with you')).toBe(5);
+	});
 });
