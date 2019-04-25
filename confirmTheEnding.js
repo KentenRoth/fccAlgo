@@ -1,8 +1,12 @@
 function confirmEnding(str, target) {
-	return str;
+	let string = str.toLowerCase();
+	let cut = string.length - target.length;
+	let sliced = string.slice(cut, str.length);
+
+	return sliced === target.toLowerCase() ? true : false;
 }
 
-confirmEnding('Bastian', 'n'); // should return true
+console.log(confirmEnding('Bastian', 'n')); // should return true
 
 module.exports = confirmEnding;
 

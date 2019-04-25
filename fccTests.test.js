@@ -2,6 +2,7 @@ const convertToF = require('./convertCtoF');
 const reverseString = require('./reverseString');
 const factorialize = require('./factorializeNumber');
 const findLongestWordLength = require('./longestWordInString');
+const confirmEnding = require('./confirmTheEnding');
 
 describe('Convert Fahrenheit to Celsius', () => {
 	it('should return -22 if it is -30 celsius', () => {
@@ -70,5 +71,19 @@ describe('Should find the lonest word length in an array', () => {
 
 	it('should return 5 with a string of "May the Force be with you"', () => {
 		expect(findLongestWordLength('May the force be with you')).toBe(5);
+	});
+});
+
+describe('Checks the ending of a string to see if the target matches', () => {
+	it('should return true with a string of "Bastian and target of n', () => {
+		expect(confirmEnding('Bastain', 'n')).toBe(true);
+	});
+
+	it('should return false with a string of Hello and target of ody', () => {
+		expect(confirmEnding('Howdy', 'ody')).toBe(false);
+	});
+
+	it('should return true with a string of taCOS and a target of cos', () => {
+		expect(confirmEnding('taCOS', 'cos')).toBe(true);
 	});
 });
