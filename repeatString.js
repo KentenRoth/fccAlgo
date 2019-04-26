@@ -1,5 +1,6 @@
 function repeatStringNumTimes(str, num) {
-	return str;
+	let repeating = str.repeat(num);
+	return repeating;
 }
 
 repeatStringNumTimes('abc', 3); //should return abcabcabc

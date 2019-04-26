@@ -3,6 +3,7 @@ const reverseString = require('./reverseString');
 const factorialize = require('./factorializeNumber');
 const findLongestWordLength = require('./longestWordInString');
 const confirmEnding = require('./confirmTheEnding');
+const repeatStringNumTimes = require('./repeatString');
 
 describe('Convert Fahrenheit to Celsius', () => {
 	it('should return -22 if it is -30 celsius', () => {
@@ -85,5 +86,15 @@ describe('Checks the ending of a string to see if the target matches', () => {
 
 	it('should return true with a string of taCOS and a target of cos', () => {
 		expect(confirmEnding('taCOS', 'cos')).toBe(true);
+	});
+});
+
+describe('Repeating string', () => {
+	it('should return abcabcabc with a string of abc and num of 3', () => {
+		expect(repeatStringNumTimes('abc', 3)).toBe('abcabcabc');
+	});
+
+	it('should return aaaaa with a string of a and number of 5', () => {
+		expect(repeatStringNumTimes('a', 5)).toBe('aaaaa');
 	});
 });

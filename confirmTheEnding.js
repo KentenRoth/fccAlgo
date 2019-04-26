@@ -6,7 +6,7 @@ function confirmEnding(str, target) {
 	return sliced === target.toLowerCase() ? true : false;
 }
 
-console.log(confirmEnding('Bastian', 'n')); // should return true
+confirmEnding('Bastian', 'n'); // should return true
 
 module.exports = confirmEnding;
 
